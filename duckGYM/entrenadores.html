@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckGYM</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <nav class="m-menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="DuckGYM">
+                    <span>DuckGYM</span>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="clases.html">Clases</a>
+                    <div class="submenu">
+                        <div class="submenu-content">
+                            <a href="#crossfit">CrossFit</a>
+                            <a href="#spinning">Spinning</a>
+                            <a href="#musculacion">Musculación</a>
+                            <a href="#pilates">Pilates</a>
+                            <a href="#zumba">Zumba</a>
+                            <a href="#boxeo">Boxeo</a>
+                            <a href="#yoga">Yoga</a>
+                            <a href="#funcional">Funcional</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="entrenadores.html">Entrenadores</a>
+                    <div class="submenu">
+                        <div class="submenu-content">
+                            <a href="entrenadores.html#personal-trainers">Personal Trainers</a>
+                            <a href="entrenadores.html#grupo">Instructores Grupales</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="precios.html">Planes</a>
+                    <div class="submenu">
+                        <div class="submenu-content">
+                            <a href="precios.html">Plan Básico</a>
+                            <a href="precios.html">Plan Intermedio</a>
+                            <a href="precios.html">Plan Premium</a>
+                            <a href="precios.html">Plan Elite</a>
+                            <a href="precios.html">Plan Estudiante</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="blog.html" target="_blank">Blog</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="nav-social">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-lightbulb"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="trainers-hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="animated-text">Nuestro Equipo Elite</h1>
+            <p class="animated-text">Conoce a los profesionales que te guiarán en tu camino hacia tus objetivos.
+                Entrenadores certificados y apasionados por tu éxito.</p>
+        </div>
+    </section>
+    <!--Entrenadores-->
+    <section class="trainers">
+        <h2>Nuestros Entrenadores</h2>
+        <!-- Instructores Grupales -->
+        <h3 id="grupo" class="trainer-category">Instructores Grupales</h3>
+        <div class="trainers-grid">
+            <!-- Yoga -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_yoga.jpg" alt="Ana García">
+                        <h3>Ana García</h3>
+                        <p>Yoga</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Flexibilidad</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Meditación</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">8 años de experiencia en Yoga. Certificada en Hatha y Vinyasa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- CrossFit -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_crossfit.jpg" alt="Carlos Martínez">
+                        <h3>Carlos Martínez</h3>
+                        <p>CrossFit</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Técnica</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Resistencia</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">Certificado Level 2 CrossFit Trainer. Especialista en WODs.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Funcional -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_funcional1.jpg" alt="Pedro Ramírez">
+                        <h3>Pedro Ramírez</h3>
+                        <p>Funcional</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>HIIT</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Core Training</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">7 años de experiencia. Especialista en entrenamiento funcional y
+                            HIIT.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Pilates -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_pilates1.jpg" alt="Sofía Mendoza">
+                        <h3>Sofía Mendoza</h3>
+                        <p>Pilates</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Mat Pilates</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 96%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Reformer</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 94%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">10 años de experiencia. Certificada en Pilates Mat y Reformer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Zumba -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_zumba2.jpg" alt="Roberto Díaz">
+                        <h3>Roberto Díaz</h3>
+                        <p>Zumba</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Ritmos Latinos</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Coreografía</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">7 años de experiencia. Especialista en ritmos latinos y urbanos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Spinning -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_spinning1.jpg" alt="Carolina Vega">
+                        <h3>Carolina Vega</h3>
+                        <p>Spinning</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Resistencia</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 96%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>HIIT Cycling</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 94%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">8 años de experiencia. Certificada en Spinning y HIIT Cycling.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Funcional -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_funcional2.jpg" alt="María López">
+                        <h3>María López</h3>
+                        <p>Funcional</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>TRX</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Kettlebell</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">5 años de experiencia. Experta en TRX y entrenamiento con
+                            kettlebell.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Yoga -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_yoga2.jpg" alt="Marco Zen">
+                        <h3>Marco Zen</h3>
+                        <p>Yoga</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Ashtanga Yoga</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Yoga Terapéutico</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">6 años de experiencia. Especialista en Ashtanga y Yoga
+                            terapéutico.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Spinning -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_spinning2.jpg" alt="Martín Silva">
+                        <h3>Martín Silva</h3>
+                        <p>Spinning</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Power Cycling</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Intervalos</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">6 años de experiencia. Especialista en entrenamiento por
+                            intervalos.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- CrossFit -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_crossfit1.jpg" alt="Daniel Herrera">
+                        <h3>Daniel Herrera</h3>
+                        <p>CrossFit</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Olympic Lifting</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Gimnasia</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">9 años de experiencia. Coach Level 3 CrossFit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Pilates -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_pilates2.jpg" alt="Lucas Moretti">
+                        <h3>Lucas Moretti</h3>
+                        <p>Pilates</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Clinical Pilates</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Rehabilitación</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">6 años de experiencia. Especialista en Pilates terapéutico.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Zumba -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_zumba1.jpg" alt="Gabriela Ruiz">
+                        <h3>Gabriela Ruiz</h3>
+                        <p>Zumba</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Zumba Fitness</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Strong Nation</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">9 años de experiencia. Instructora certificada ZIN™.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Personal Trainers -->
+        <h3 id="personal-trainers" class="trainer-category">Personal Trainers</h3>
+        <div class="trainers-grid">
+            <!-- Personal Trainer Musculación -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_musculacion.jpg" alt="Diego Torres">
+                        <h3>Diego Torres</h3>
+                        <p>Musculación</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Hipertrofia</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Nutrición</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">Licenciado en Ed. Física. Especialista en hipertrofia y nutrición
+                            deportiva.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Personal Trainer Boxeo -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_boxeo.jpg" alt="Laura Sánchez">
+                        <h3>Laura Sánchez</h3>
+                        <p>Boxeo</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Técnica</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Acondicionamiento</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">Ex boxeadora profesional. 12 años de experiencia en
+                            entrenamiento.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Personal Trainer Musculación-->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_musculacion2.jpg" alt="Ana Martínez">
+                        <h3>Ana Martínez</h3>
+                        <p>Musculación</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="far fa-star"></i><i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Fuerza</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Rehabilitación</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">Especialista en entrenamiento de fuerza y rehabilitación
+                            muscular. 7 años de experiencia.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Personal Trainer Boxeo -->
+            <div class="trainer-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/trainer_boxeo2.jpg" alt="Miguel Torres">
+                        <h3>Miguel Torres</h3>
+                        <p>Boxeo</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3>Especialidades</h3>
+                        <div class="skill-bar">
+                            <p>Técnica Avanzada</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <p>Defensa Personal</p>
+                            <div class="bar">
+                                <div class="progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <p class="trainer-description">Ex campeón nacional. Especialista en técnica y defensa personal.
+                            10 años de experiencia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer  -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section column-1">
+                <div class="footer-group">
+                    <h3>Planes</h3>
+                    <ul>
+                        <li><a href="precios.html">Plan Básico</a></li>
+                        <li><a href="precios.html">Plan Intermedio</a></li>
+                        <li><a href="precios.html">Plan Premium</a></li>
+                        <li><a href="precios.html">Plan Elite</a></li>
+                    </ul>
+                </div>
+                <div class="footer-group">
+                    <h3>Clases</h3>
+                    <ul>
+                        <li><a href="#crossfit">CrossFit</a></li>
+                        <li><a href="#yoga">Yoga</a></li>
+                        <li><a href="#spinning">Spinning</a></li>
+                        <li><a href="#boxeo">Boxeo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section column-2">
+                <div class="footer-group">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@duckgym.com</li>
+                        <li><i class="fas fa-clock"></i> Lun-Sáb: 6:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div class="footer-group newsletter">
+                    <h3>Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section column-3">
+                <h3>Encuéntranos</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.4222188884987!2d-65.29743652590527!3d-24.191987978371664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5a80f912df%3A0xc3a7eea0225db36f!2sDuck%20Gym!5e0!3m2!1ses!2sar!4v1744036546808!5m2!1ses!2sar"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

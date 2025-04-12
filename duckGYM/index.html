@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckGYM</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<!--Body-->
+<body class="light-mode">
+    <header>
+        <nav class="m-menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="DuckGYM">
+                    <span>DuckGYM</span>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <!--Menú-->
+            <ul class="menu">
+                <li>
+                    <a href="clases.html">Clases</a>
+                    <div class="submenu">
+                        <div class="submenu-content">
+                            <a href="#crossfit">CrossFit</a>
+                            <a href="#spinning">Spinning</a>
+                            <a href="#musculacion">Musculación</a>
+                            <a href="#pilates">Pilates</a>
+                            <a href="#zumba">Zumba</a>
+                            <a href="#boxeo">Boxeo</a>
+                            <a href="#yoga">Yoga</a>
+                            <a href="#funcional">Funcional</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="entrenadores.html">Entrenadores</a>
+                    <div class="submenu">
+                        <div class="submenu-content">
+                            <a href="entrenadores.html#personal-trainers">Personal Trainers</a>
+                            <a href="entrenadores.html#grupo">Instructores Grupales</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="precios.html">Planes</a>
+                    <div class="submenu">
+                        <div class="submenu-content">
+                            <a href="precios.html">Plan Básico</a>
+                            <a href="precios.html">Plan Intermedio</a>
+                            <a href="precios.html">Plan Premium</a>
+                            <a href="precios.html">Plan Elite</a>
+                            <a href="precios.html">Plan Estudiante</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="blog.html" target="_blank">Blog</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="nav-social">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-lightbulb"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero -->
+    <section class="hero">
+        <video autoplay muted loop id="hero-video" playsinline>
+            <source src="video/video_motivacional.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 class="animated-text">Transforma tu vida en DuckGYM</h1>
+            <p class="animated-text">Tu mejor versión comienza aquí</p>
+        </div>
+    </section>
+    <!-- Clases destacadas -->
+    <section class="featured-classes">
+        <h2>Clases Destacadas</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="images/yoga.jpg" alt="Yoga">
+                <h3>Yoga</h3>
+                <p>Encuentra tu equilibrio interior</p>
+            </div>
+            <div class="card">
+                <img src="images/crossfit.jpg" alt="CrossFit">
+                <h3>CrossFit</h3>
+                <p>Supera tus límites</p>
+            </div>
+            <div class="card">
+                <img src="images/spinning.jpg" alt="Spinning">
+                <h3>Spinning</h3>
+                <p>Cardio de alto impacto</p>
+            </div>
+        </div>
+    </section>
+    <!-- Entrenadores destacados -->
+    <section class="trainers">
+        <h2>Nuestros Entrenadores</h2>
+        <div class="trainers-container">
+            <!-- Entrenador 1 -->
+            <div class="trainer-card">
+                <img src="images/entrenador_1.jpg" alt="Alex Martinez">
+                <div class="trainer-info">
+                    <h3 class="trainer-name">Alex Martinez</h3>
+                </div>
+                <div class="trainer-details">
+                    <h3 class="trainer-specialty">CrossFit</h3>
+                    <div class="trainer-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Entrenador 2 -->
+            <div class="trainer-card">
+                <img src="images/entrenador_2.jpg" alt="Sarah Johnson">
+                <div class="trainer-info">
+                    <h3 class="trainer-name">Sarah Johnson</h3>
+                </div>
+                <div class="trainer-details">
+                    <h3 class="trainer-specialty">Yoga y Pilates</h3>
+                    <div class="trainer-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Entrenador 3 -->
+            <div class="trainer-card">
+                <img src="images/entrenador_3.jpg" alt="Mike Wilson">
+                <div class="trainer-info">
+                    <h3 class="trainer-name">Mike Wilson</h3>
+                </div>
+                <div class="trainer-details">
+                    <h3 class="trainer-specialty">Musculación </h3>
+                    <div class="trainer-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- Entrenador 4 -->
+            <div class="trainer-card">
+                <img src="images/entrenador_4.jpg" alt="Laura Garcia">
+                <div class="trainer-info">
+                    <h3 class="trainer-name">Laura Garcia</h3>
+                </div>
+                <div class="trainer-details">
+                    <h3 class="trainer-specialty">Funcional</h3>
+                    <div class="trainer-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contador animado -->
+    <section class="counter">
+        <div class="counter-item">
+            <span class="count" data-target="1500">0</span>
+            <span>+</span>
+            <p>SOCIOS SATISFECHOS</p>
+        </div>
+    </section>
+    <!-- Testimonios Carrusel -->
+    <section class="testimonials">
+        <h2>Testimonios</h2>
+        <div class="carousel">
+            <div class="carousel-track">
+                <!-- Primer grupo de testimonios -->
+                <div class="testimonial">
+                    <p>"Increíble ambiente y resultados"</p>
+                    <cite>- María García</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Los mejores entrenadores"</p>
+                    <cite>- Juan Pérez</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Cambió mi vida por completo"</p>
+                    <cite>- Ana López</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Las clases de CrossFit son desafiantes y motivadoras"</p>
+                    <cite>- Carlos Rodríguez</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"El yoga me ayudó a mejorar mi flexibilidad y reducir el estrés"</p>
+                    <cite>- Laura Martínez</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Excelente atención y seguimiento personalizado"</p>
+                    <cite>- Diego Sánchez</cite>
+                </div>
+                <!-- Duplicación para el carrusel infinito -->
+                <div class="testimonial">
+                    <p>"Increíble ambiente y resultados"</p>
+                    <cite>- María García</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Los mejores entrenadores"</p>
+                    <cite>- Juan Pérez</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Cambió mi vida por completo"</p>
+                    <cite>- Ana López</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Las clases de CrossFit son desafiantes y motivadoras"</p>
+                    <cite>- Carlos Rodríguez</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"El yoga me ayudó a mejorar mi flexibilidad y reducir el estrés"</p>
+                    <cite>- Laura Martínez</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Excelente atención y seguimiento personalizado"</p>
+                    <cite>- Diego Sánchez</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"Las clases de spinning son muy energéticas. ¡Me encantan!"</p>
+                    <cite>- Valentina Torres</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Planes -->
+    <section class="index-pricing">
+        <h2>Nuestros Planes</h2>
+        <div class="index-pricing-container">
+            <!-- Plan Basico -->
+            <div class="index-pricing-card">
+                <h3>Plan Básico</h3>
+                <div class="price">$5000</div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Acceso área de musculación</li>
+                    <li><i class="fas fa-check"></i> 2 clases grupales por semana</li>
+                    <li><i class="fas fa-check"></i> Vestuarios</li>
+                </ul>
+                <a href="#basico" class="pricing-button">Elegir Plan</a>
+            </div>
+            <!-- Plan Premium -->
+            <div class="index-pricing-card featured">
+                <div class="popular-badge">Más Popular</div>
+                <h3>Plan Premium</h3>
+                <div class="price">$45000</div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Todo del plan intermedio</li>
+                    <li><i class="fas fa-check"></i> 4 clases personales al mes</li>
+                    <li><i class="fas fa-check"></i> Evaluación nutricional</li>
+                </ul>
+                <a href="#premium" class="pricing-button">Elegir Plan</a>
+            </div>
+            <!-- Plan Intermedio -->
+            <div class="index-pricing-card">
+                <h3>Plan Intermedio</h3>
+                <div class="price">$13000</div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Todo del plan básico</li>
+                    <li><i class="fas fa-check"></i> Clases grupales ilimitadas</li>
+                    <li><i class="fas fa-check"></i> 1 clase personal gratis</li>
+                </ul>
+                <a href="#intermedio" class="pricing-button">Elegir Plan</a>
+            </div>
+        </div>
+    </section>
+    <!-- Promoción del Blog -->
+    <section class="blog-promo">
+        <div class="blog-promo-content">
+            <img src="images/logo.png" alt="Blog DuckGYM">
+            <div class="blog-promo-text">
+                <h2>Visita Nuestro Blog</h2>
+                <p>Descubre consejos de nutrición, rutinas de entrenamiento y más</p>
+                <a href="blog.html" target="_blank" class="blog-button">Explorar Blog</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section column-1">
+                <div class="footer-group">
+                    <h3>Planes</h3>
+                    <ul>
+                        <li><a href="precios.html">Plan Básico</a></li>
+                        <li><a href="precios.html">Plan Intermedio</a></li>
+                        <li><a href="precios.html">Plan Premium</a></li>
+                        <li><a href="precios.html">Plan Elite</a></li>
+                    </ul>
+                </div>
+                <div class="footer-group">
+                    <h3>Clases</h3>
+                    <ul>
+                        <li><a href="#crossfit">CrossFit</a></li>
+                        <li><a href="#yoga">Yoga</a></li>
+                        <li><a href="#spinning">Spinning</a></li>
+                        <li><a href="#boxeo">Boxeo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section column-2">
+                <div class="footer-group">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@duckgym.com</li>
+                        <li><i class="fas fa-clock"></i> Lun-Sáb: 6:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div class="footer-group newsletter">
+                    <h3>Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section column-3">
+                <h3>Encuéntranos</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.4222188884987!2d-65.29743652590527!3d-24.191987978371664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5a80f912df%3A0xc3a7eea0225db36f!2sDuck%20Gym!5e0!3m2!1ses!2sar!4v1744036546808!5m2!1ses!2sar"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

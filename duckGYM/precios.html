@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckGYM</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/classes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <nav class="m-menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="DuckGYM">
+                    <span>DuckGYM</span>
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="clases.html">Clases</a>
+                    <div class="submenu">
+                        <div class="submenu-content">
+                            <a href="#crossfit">CrossFit</a>
+                            <a href="#spinning">Spinning</a>
+                            <a href="#musculacion">Musculación</a>
+                            <a href="#pilates">Pilates</a>
+                            <a href="#zumba">Zumba</a>
+                            <a href="#boxeo">Boxeo</a>
+                            <a href="#yoga">Yoga</a>
+                            <a href="#funcional">Funcional</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="entrenadores.html">Entrenadores</a>
+                    <div class="submenu">
+                        <div class="submenu-content">
+                            <a href="entrenadores.html#personal-trainers">Personal Trainers</a>
+                            <a href="entrenadores.html#grupo">Instructores Grupales</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="precios.html">Planes</a>
+                    <div class="submenu">
+                        <div class="submenu-content">
+                            <a href="precios.html">Plan Básico</a>
+                            <a href="precios.html">Plan Intermedio</a>
+                            <a href="precios.html">Plan Premium</a>
+                            <a href="precios.html">Plan Elite</a>
+                            <a href="precios.html">Plan Estudiante</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="blog.html" target="_blank">Blog</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <div class="nav-social">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-lightbulb"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="precios-hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="animated-text">Transforma tu vida en DuckGYM</h1>
+            <p class="animated-text">Tu mejor versión comienza aquí</p>
+        </div>
+    </section>
+    <!-- Precios -->
+    <section class="pricing">
+        <h2>Nuestros Planes</h2>
+        <input type="radio" name="price-toggle" id="monthly" class="toggle-control" checked>
+        <input type="radio" name="price-toggle" id="annual" class="toggle-control">
+        <!--Mensual-Anual-->
+        <div class="pricing-toggle">
+            <div class="toggle-labels">
+                <label for="monthly" class="monthly-label">Mensual</label>
+                <label for="annual" class="annual-label">Anual</label>
+            </div>
+        </div>
+        <div class="pricing-container">
+            <!-- Plan Básico -->
+            <div class="pricing-card">
+                <h3>Plan Básico</h3>
+                <div class="monthly-price">
+                    <div class="price">$5000</div>
+                </div>
+                <div class="annual-price">
+                    <div class="price">$4500/mes</div>
+                    <div class="savings">Ahorrás 10%</div>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Acceso a sala de musculación</li>
+                    <li><i class="fas fa-check"></i> 2 clases grupales/semana</li>
+                    <li><i class="fas fa-check"></i> Evaluación inicial</li>
+                </ul>
+                <a href="#" class="pricing-button">Elegir Plan</a>
+            </div>
+            <!-- Plan Premium -->
+            <div class="pricing-card featured">
+                <h3>Plan Premium</h3>
+                <div class="monthly-price">
+                    <div class="price">$7500</div>
+                </div>
+                <div class="annual-price">
+                    <div class="price">$6000/mes</div>
+                    <div class="savings">Ahorrás 20%</div>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Todo lo del plan intermedio</li>
+                    <li><i class="fas fa-check"></i> 2 sesiones PT mensuales</li>
+                    <li><i class="fas fa-check"></i> Plan nutricional básico</li>
+                </ul>
+                <a href="#" class="pricing-button">Elegir Plan</a>
+            </div>
+            <!-- Plan Intermedio -->
+            <div class="pricing-card">
+                <h3>Plan Intermedio</h3>
+                <div class="monthly-price">
+                    <div class="price">$6000</div>
+                </div>
+                <div class="annual-price">
+                    <div class="price">$5100/mes</div>
+                    <div class="savings">Ahorrás 15%</div>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Todo lo del plan básico</li>
+                    <li><i class="fas fa-check"></i> Clases grupales ilimitadas</li>
+                    <li><i class="fas fa-check"></i> Acceso a zona cardio</li>
+                </ul>
+                <a href="#" class="pricing-button">Elegir Plan</a>
+            </div>
+            <!-- Plan Elite -->
+            <div class="pricing-card">
+                <h3>Plan Elite</h3>
+                <div class="monthly-price">
+                    <div class="price">$9000</div>
+                </div>
+                <div class="annual-price">
+                    <div class="price">$6750/mes</div>
+                    <div class="savings">Ahorrás 25%</div>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Todo lo del plan premium</li>
+                    <li><i class="fas fa-check"></i> 4 sesiones PT mensuales</li>
+                    <li><i class="fas fa-check"></i> Plan nutricional completo</li>
+                </ul>
+                <a href="#" class="pricing-button">Elegir Plan</a>
+            </div>
+            <!-- Plan Estudiante -->
+            <div class="pricing-card">
+                <h3>Plan Estudiante</h3>
+                <div class="monthly-price">
+                    <div class="price">$3500/mes</div>
+                </div>
+                <div class="annual-price">
+                    <div class="price">$3000/mes</div>
+                    <div class="savings">Ahorrás 25%</div>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Acceso en horario específico</li>
+                    <li><i class="fas fa-check"></i> Clases grupales incluidas</li>
+                    <li><i class="fas fa-check"></i> Requiere credencial vigente</li>
+                </ul>
+                <a href="#" class="pricing-button">Elegir Plan</a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section column-1">
+                <div class="footer-group">
+                    <h3>Planes</h3>
+                    <ul>
+                        <li><a href="precios.html">Plan Básico</a></li>
+                        <li><a href="precios.html">Plan Intermedio</a></li>
+                        <li><a href="precios.html">Plan Premium</a></li>
+                        <li><a href="precios.html">Plan Elite</a></li>
+                    </ul>
+                </div>
+                <div class="footer-group">
+                    <h3>Clases</h3>
+                    <ul>
+                        <li><a href="#crossfit">CrossFit</a></li>
+                        <li><a href="#yoga">Yoga</a></li>
+                        <li><a href="#spinning">Spinning</a></li>
+                        <li><a href="#boxeo">Boxeo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section column-2">
+                <div class="footer-group">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Av. Siempreviva 742</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@duckgym.com</li>
+                        <li><i class="fas fa-clock"></i> Lun-Sáb: 6:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div class="footer-group newsletter">
+                    <h3>Newsletter</h3>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section column-3">
+                <h3>Encuéntranos</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.4222188884987!2d-65.29743652590527!3d-24.191987978371664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5a80f912df%3A0xc3a7eea0225db36f!2sDuck%20Gym!5e0!3m2!1ses!2sar!4v1744036546808!5m2!1ses!2sar"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
